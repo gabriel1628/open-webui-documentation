@@ -31,8 +31,9 @@
 
 ## Introduction
 
-Welcome to our secure, in-house AI platform, powered by **Open WebUI** !
+Welcome to our AI platform powered by **Open WebUI** !
 <br>
+Our application allows you to chat with the most powerful LLMs (Large Language Models) on the market.
 Think of it as your personal, **private chatbot**, similar to tools like ChatGPT, but with key advantages such as the access to a variety of cutting-edge AI models and the control of their parameters.
 
 **How to Use It:**
