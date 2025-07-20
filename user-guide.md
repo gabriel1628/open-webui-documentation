@@ -211,7 +211,7 @@ To change the language, go to **Settings -> General -> Language** and select you
 
 ## FAQ
 
-**Can't reach the URL, what to do?**
+**Why can't I open the application in my browser?**
 <br>
-Delete browsing data, at least from the last time you succeeded to connect to the app 
+Try to delete browsing data, at least from the last time you succeeded to connect to the app.
 
