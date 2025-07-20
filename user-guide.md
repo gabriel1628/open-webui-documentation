@@ -69,7 +69,6 @@ The interface is divided into three main vertical sections:
 #### I. Left sidebar (navigation & history)
 
 1.  **Hamburger Menu Icon (☰):** At the very top left, used to collapse or expand the sidebar for more screen space.
-<!-- 2.  **Open WebUI Logo (`OI`):** The branding or icon for the application.-->
 3.  **"New Chat" Button:** A prominent button to initiate a new conversation, clearing the context from the previous one.
 5.  **Search bar (🔎):** Allows users to search through their conversation history.
 6.  **Notes (📄):** A section for managing user notes, distinct from chats.
