@@ -12,12 +12,16 @@
         - [I. Barre latérale gauche (navigation et historique)](#i-barre-latérale-gauche-navigation-et-historique)
         - [II. Zone de discussion](#ii-zone-de-discussion)
         - [III. Menu utilisateur et paramètres](#iii-menu-utilisateur-et-paramètres)
+- [Fonctionnalités du chat](#fonctionnalités-du-chat)
+- [Paramètres du chat](#paramètres-du-chat)
+- [Liste des modèles](#liste-des-modèles)
+    - [Modèles de génération de texte](#modèles-de-génération-de-texte)
+    - [Modèle de génération d'image](#modèle-de-génération-dimage)
+    - [Modèle de reconnaissance vocale](#modèle-de-reconnaissance-vocale)
+    - [Modèle de synthèse vocale](#modèle-de-synthèse-vocale)
+- [Espace de travail](#espace-de-travail)
 - [Paramètres utilisateur](#paramètres-utilisateur)
     - [Changer la langue](#changer-la-langue)
-- [Espace de travail](#espace-de-travail)
-- [Liste des modèles](#liste-des-modèles)
-- [Modèle utilisé pour la génération d'images](#modèle-utilisé-pour-la-génération-dimages)
-- [Modèle utilisé pour la génération de parole](#modèle-utilisé-pour-la-génération-de-parole)
 - [Conseils](#conseils)
     - [Évitez les conversations inutilement longues](#évitez-les-conversations-inutilement-longues)
     - [Choisissez le bon modèle](#choisissez-le-bon-modèle)
@@ -31,8 +35,9 @@
 
 ## Introduction
 
-Bienvenu sur notre plateforme d'IA interne et sécurisée, basée sur **Open WebUI** !
+Bienvenu sur notre plateforme d'IA basée sur **Open WebUI** !
 <br>
+Notre application vous permet de discuter avec les LLM (Large Language Model) les plus puissants du marché.
 Considérez-la comme votre **chatbot personnel et privé**, similaire à des outils comme ChatGPT, mais avec des avantages clés tels que l'accès à une variété de modèles d'IA de pointe et le contrôle de leurs paramètres.
 
 **Comment l'utiliser :**
@@ -114,6 +119,69 @@ L'interface est divisée verticalement en trois sections principales :
     * **Copier** le contenu de la discussion.
     * Ajouter des balises (tags) à la discussion. Certaines balises sont automatiquement générées par un LLM lorsque la conversation commence.
 
+
+## Fonctionnalités du chat
+
+Voici une liste non exhaustive des fonctionnalités offertes dans le chat :
+- Sélectionner un ou plusieurs modèles.
+- Changer le modèle au sein de la même conversation.
+- Cliquer sur le bouton **+** (Plus) en bas du champ de saisie de texte pour importer (**téléverser**) des fichiers et en discuter.
+- Cliquer sur le bouton **+** (Plus) en bas du champ de saisie de texte pour prendre une capture (**prise de vue**) de votre écran, onglet ou fenêtre et en discuter.
+- Cliquer sur **Image** sous le champ de saisie de texte pour générer une image à partir de votre prompt.
+- Cliquer sur **Interpreteur de code** sous le champ de saisie de texte pour demander au modèle de générer et d'exécuter du code dans un environnement "sandbox".
+- Cliquer sur l'icône de **microphone** en bas à droite du champ de saisie pour saisir votre prompt oralement. Un modèle de reconnaissance vocale transcrira votre saisie vocale (voir [Modèle de reconnaissance vocale](#modèle-de-reconnaissance-vocale)) et l'enverra au LLM.
+- Cliquer sur l'icône de **casque** à droite de l'icône de microphone pour démarrer une conversation orale avec le modèle.
+Voici comment cela fonctionne :
+    - Un modèle de reconnaissance vocale transcrira votre saisie vocale (voir [Modèle de reconnaissance vocale](#modèle-de-reconnaissance-vocale)) ;
+    - Le prompt transcrit est envoyé au LLM ;
+    - Le LLM génère sa réponse ;
+    - Un modèle de synthèse vocale lit à voix haute la réponse du LLM (voir [Modèle de synthèse vocale](#modèle-de-synthèse-vocale)).
+- **Modifier** votre prompt en cliquant sur l'icône de modification sous votre message et générer une nouvelle réponse du LLM.
+- **Modifier** la réponse du LLM en cliquant sur l'icône de modification sous le message.
+- **Copier** votre prompt ou la réponse du modèle en cliquant sur l'icône de copie sous le message.
+- **Lire à voix haute** la réponse du LLM en cliquant sur l'icône de haut-parleur sous le message.
+- (Non recommandé) **Générer une image** à partir de la réponse du LLM en cliquant sur l'icône d'image sous son message. Il est recommandé de plutôt générer une image directement à partir de votre prompt.
+- **Évaluer** la réponse du LLM en lui attribuant un pouce levé ou un pouce baissé.
+- **Noter** la réponse du LLM sur une échelle de 1 à 10 et expliquer votre note par une courte phrase (facultatif).
+- Prolonger la réponse du LLM en cliquant sur l'icône **lecture** (**Continuer la réponse**).
+- **Regénérer** la réponse du LLM à l'aide de l'icône **recharger**. Vous pouvez changer le modèle avant de regénérer pour obtenir une réponse de ce LLM nouvellement sélectionné.
+<!-- - Sélectionner du texte dans la réponse pour **demander** quelque chose sur le texte sélectionné ou demander directement au LLM de l'**expliquer**.-->
+- Cliquer sur **Contrôles** en haut à droite de votre écran pour configurer le prompt système et les paramètres avancés du LLM (voir [Paramètres du chat](#paramètres-du-chat)).
+- Une fois une conversation démarrée, vous pouvez cliquer sur les **trois points (•••)** en haut à droite de l'écran, à côté de Contrôles, pour :
+    - **Partager** la conversation via une URL.
+    - Obtenir un **aperçu** et naviguer facilement dans la conversation.
+    - **Télécharger** la conversation dans différents formats (json, txt ou pdf).
+    - **Copier** la conversation entière.
+    - Ajouter des **tags** à la conversation ou les modifier.
+- Vous pouvez également cliquer sur les **trois points (•••)** dans le panneau de gauche, à côté du titre de la conversation, pour **épingler**, **renommer** ou **archiver** la conversation, ainsi qu'accéder aux options mentionnées juste avant.
+
+
+## Paramètres du chat
+
+
+## Liste des modèles
+
+### Modèles de génération de texte
+
+Les modèles de génération de texte sont appelés grands modèles de langage ou plus couramment LLM pour Large Language Model.
+Les LLM disponibles dans l'application sont listés dans le tableau ci-dessous.
+La colonne **Type en entrée** indique le format accepté par le modèle, qui peut être texte, image, audio, vidéo, ou une combinaison des 4.
+Par exemple, certains modèles n'acceptent que du texte en entrée, d'autres du texte et des images.
+Donc si essayez de donner une image à un modèle qui n'accepte que du texte, vous recevrez une erreur.
+Référez-vous au tableau pour savoir si le modèle que vous utilisez accepte le type de donnée que vous souhaitez lui envoyez.
+
+**Remarque:** Lorsque vous utilisez la saisie ou la conversation vocale (voir [II. Zone de discussion](#ii-zone-de-discussion)), c'est un modèle à part qui se charge de transcrire votre message vocal en message écrit, vous pouvez donc utiliser ces fonctionnalités quel que soit le modèle que vous utilisez. En revanche, vous ne pouvez pas joindre un fichier audio si le modèle n'accepte pas les audios en entrée.
+
+### Modèle de génération d'image
+
+### Modèle de reconnaissance vocale
+
+### Modèle de synthèse vocale
+
+
+## Espace de travail
+
+
 ## Paramètres utilisateur
 
 Vous pouvez accéder aux paramètres utilisateur en cliquant sur votre avatar/vos initiales en haut à droite ou en bas à gauche de l'écran, puis en sélectionnant **⚙️ Paramètres**.
@@ -123,34 +191,23 @@ Vous pouvez accéder aux paramètres utilisateur en cliquant sur votre avatar/vo
 Pour changer la langue, allez dans **Paramètres -> Général -> Langue** et sélectionnez votre langue préférée.
 
 
-## Espace de travail
-
-
-
-## Liste des modèles
-
-Les modèles disponibles sur l'application sont listés dans le tableau ci-dessous.
-La colonne **Type en entrée** indique le format accepté par le modèle, qui peut être texte, image, audio, vidéo, ou une combinaison des 4.
-Par exemple, certains modèles n'acceptent que du texte en entrée, d'autres du texte et des images.
-Donc si essayez de donner une image à un modèle qui n'accepte que du texte, vous recevrez une erreur.
-Référez-vous au tableau pour savoir si le modèle que vous utilisez accepte le type de donnée que vous souhaitez lui envoyez.
-
-**Remarque:** Lorsque vous utilisez la saisie ou la conversation vocale (voir [II. Zone de discussion](#ii-zone-de-discussion)), c'est un modèle à part qui se charge de transcrire votre message vocal en message écrit, vous pouvez donc utiliser ces fonctionnalités quel que soit le modèle que vous utilisez. En revanche, vous ne pouvez pas joindre un fichier audio si le modèle n'accepte pas les audios en entrée.
-
-
-## Modèle utilisé pour la génération d'images
-
-## Modèle utilisé pour la génération de parole
-
 ## Conseils
+
 ### Évitez les conversations inutilement longues
+
 ### Choisissez le bon modèle
+
 ### Générez plusieurs réponses
+
 ### Utilisez les prompts système
+
 ### Ajustez la température
+
 ### Recherche web
 
+
 ## FAQ
-**Impossible d'atteindre l'URL, que faire ?**
+
+**Pourquoi ne puis-je pas ouvrir l'application dans mon navigateur?**
 <br>
-Supprimez les données de navigation, au moins depuis la dernière fois que vous avez réussi à vous connecter à l'application.
+Essayez de supprimez les données de navigation, au moins depuis la dernière fois que vous avez réussi à vous connecter à l'application.
