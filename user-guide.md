@@ -84,12 +84,6 @@ The interface is divided into three main vertical sections:
     *   **Model name:** Shows the AI model currently selected for the conversation.
     *   **Dropdown arrow:** Indicates that clicking this allows the user to select a different AI model.
     *   **"Set as default" text:** An option to designate the currently selected model as the default for future chats.
-<!--
-3.  **Chat Display Area (Conversation History - currently empty/initial state):**
-    *   **Open WebUI Logo (`OI`):** Central branding.
-    *   **Model Name ("gemini-2.5-flash"):** Reinforces which model is being used.
-    *   **Placeholder Message ("How can I help you today?"):** The initial greeting from the AI, indicating it's ready for a prompt. This is where the messages from both the user and the AI would appear as the conversation progresses.
--->
 4.  **Message Input Area:**
     *   **Text Input Box:** The large box where the user types their messages. It contains the placeholder "How can I help you today?" which would disappear upon typing.
     *   **Attachment/Options Button (+):** At the bottom left of the input box, opens options to attach files (like images) or access more advanced input features.
@@ -144,7 +138,6 @@ Here is how it works:
 - **Grade** the LLM's response on a scale of 1 to 10 and explain your grade with a short sentence (optional).
 - Extend the LLM's response by clicking on the **play** icon (**Continue response**).
 - **Regenrate** the LLM's response using the **reload** icon. You can change the model before regenerating to have a response from this newly selected LLM.
-<!-- - Highlight text in the response to **Ask** a question about the highlighted text or directly ask the LLM to **Explain** it.-->
 - Click on **Controls** at the top right of your screen to configure the system prompt and advanced parameters of the LLM (see [Chat parameters](#chat-parameters)).
 - Once a conversation has started, you can click on the **three dots (•••)** at the top right of the screen, next to Controls, to:
     - **Share** the chat via an URL.

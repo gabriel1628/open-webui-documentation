@@ -84,12 +84,6 @@ L'interface est divisée verticalement en trois sections principales :
     *   **Nom du modèle :** Affiche le modèle d'IA actuellement sélectionné pour la conversation.
     *   **Flèche déroulante :** Indique qu'un clic sur celle-ci permet à l'utilisateur de sélectionner un autre modèle d'IA.
     *   **Texte « Définir comme valeur par défaut » :** Une option pour désigner le modèle actuellement sélectionné comme modèle par défaut pour les futures discussions.
-<!--
-3.  **Zone d'affichage des discussions (Historique des conversations - actuellement vide/état initial) :**
-    *   **Logo Open WebUI (OI) :** Image de marque centrale.
-    *   **Nom du modèle (« gemini-2.5-flash ») :** Précise le modèle utilisé.
-    *   **Message de remplissage (« Comment puis-je vous aider aujourd'hui ? ») :** Le message d'accueil initial de l'IA, indiquant qu'elle est prête à recevoir une invite. C'est ici que les messages de l'utilisateur et de l'IA apparaîtraient au fur et à mesure que la conversation progresse.
--->
 4.  **Zone de saisie des messages :**
     *   **Zone de saisie de texte :** La zone où l'utilisateur tape ses messages. Elle contient le message de remplissage « Comment puis-je vous aider aujourd'hui ? » qui disparaîtrait lors de la saisie.
     *   **Bouton Pièces jointes/Options (+) :** En bas à gauche de la zone de saisie, ouvre les options pour joindre des fichiers (comme des images) ou accéder à des fonctionnalités de saisie plus avancées.
@@ -144,7 +138,6 @@ Voici comment cela fonctionne :
 - **Noter** la réponse du LLM sur une échelle de 1 à 10 et expliquer votre note par une courte phrase (facultatif).
 - Prolonger la réponse du LLM en cliquant sur l'icône **lecture** (**Continuer la réponse**).
 - **Regénérer** la réponse du LLM à l'aide de l'icône **recharger**. Vous pouvez changer le modèle avant de regénérer pour obtenir une réponse de ce LLM nouvellement sélectionné.
-<!-- - Sélectionner du texte dans la réponse pour **demander** quelque chose sur le texte sélectionné ou demander directement au LLM de l'**expliquer**.-->
 - Cliquer sur **Contrôles** en haut à droite de votre écran pour configurer le prompt système et les paramètres avancés du LLM (voir [Paramètres du chat](#paramètres-du-chat)).
 - Une fois une conversation démarrée, vous pouvez cliquer sur les **trois points (•••)** en haut à droite de l'écran, à côté de Contrôles, pour :
     - **Partager** la conversation via une URL.
