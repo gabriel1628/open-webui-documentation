@@ -16,8 +16,13 @@
     - [Change language](#change-language)
 - [Workspace](#workspace)
 - [List of models](#list-of-models)
-- [Model used for image generation](#model-used-for-image-generation)
-- [Model used for speech generation](#model-used-for-speech-generation)
+    - [Text generations models](#text-generations-models)
+    - [Text-to-image model](#text-to-image-model)
+    - [Speech-to-text model](#speech-to-text-model)
+    - [Text-to-speech model](#text-to-speech-model)
+- [Workspace](#workspace)
+- [User settings](#user-settings)
+    - [Change language](#change-language)
 - [Tips](#tips)
     - [Avoid unnecessary long conversations](#avoid-unnecessary-long-conversations)
     - [Choose the right model](#choose-the-right-model)
@@ -133,7 +138,10 @@ To change the language, go to **Settings -> General -> Language** and select you
 
 ## List of models
 
-The models available in the application are listed in the table below.
+### Text generations models
+
+Text generation models are commonly called LLMs for Large Language Models.
+The LLMs available in the application are listed in the table below.
 The **Input Type** column indicates the format accepted by the model, which can be text, image, audio, video, or a combination of these four.
 For example, some models only accept text as input, while others accept both text and images.
 Therefore, if you attempt to provide an image to a model that only accepts text, you will receive an error.
@@ -142,10 +150,25 @@ Refer to the table to confirm whether the model you are using accepts the data t
 **Note:** When using voice input or voice conversation (see [II. Discussion Area](#ii-zone-de-discussion)), a separate, dedicated model handles the transcription of your spoken message into a written one. This means you can use these features regardless of the specific model you are interacting with. However, you cannot attach an audio file directly if the model does not accept audio as input.
 
 
-## Model used for image generation
+### Text-to-image model
 
 
-## Model used for speech generation
+### Speech-to-text model
+
+
+### Text-to-speech model
+
+
+## Workspace
+
+
+## User settings
+
+You can access the user settings by clicking on your avatar/initials at the top right or at the bottom left of the screen and then selecting **⚙️ Settings**.
+
+### Change language
+
+To change the language, go to **Settings -> General -> Language** and select your preferred language.
 
 
 ## Tips
