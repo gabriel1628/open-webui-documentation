@@ -69,7 +69,7 @@ L'interface est divisée verticalement en trois sections principales :
 #### I. Barre latérale gauche (navigation et historique)
 
 1.  **Menu hamburger (☰) :** Tout en haut à gauche, utilisée pour réduire ou étendre la barre latérale afin de gagner de l'espace sur l'écran.
-<2.  **Logo Open WebUI (OI) :** L'image de marque ou l'icône de l'application.>
+<!-- 2.  **Logo Open WebUI (OI) :** L'image de marque ou l'icône de l'application.-->
 3.  **Bouton « Nouvelle discussion » :** Un bouton proéminent pour lancer une nouvelle conversation, effaçant le contexte de la précédente.
 5.  **Barre de recherche (🔎) :** Permet aux utilisateurs de rechercher dans leur historique de conversation.
 6.  **Notes :** Une section pour gérer les notes de l'utilisateur, distinctes des conversations.
